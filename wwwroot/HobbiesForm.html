@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script>
+            let txt1 = document.getElementById("hobbies");
+            
+            
+        function getHobby() {
+            txt1 = HobbiesList;
+        }
+
+
+        
+    </script>
+    <link href="css/site.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+     <div class="container">
+         <h2>List Your Hobbies</h2>
+         <form name="hobbieslobby" method="post" onsubmit="addHobby()">
+             <fieldset>
+                 <legend>Enter your name and your hobbies here</legend>
+                 <div id="fname">
+                     First Name: <input type="text" required autofocus placeholder="enter your first name"/>
+                 </div>
+                 <div id="lname">
+                     Last Name: <input type="text" required autofocus placeholder="enter your last name"/>
+                 </div>
+                 <div id="hobbies">
+                     Hobbies: <input type="text" placeholder="enter hobby here"/>
+                 </div>
+                 <br />
+                 <input type="submit" value="Add Hobby" onclick="getHobby()"/>
+                 <p id="HobbiesList">
+                     <input type="text"/>
+                 </p>
+                 
+             </fieldset>
+             
+     </div>
+             
+
+
+</body>
+</html>

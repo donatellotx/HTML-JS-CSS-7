@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/site.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function getSum() {
+            let num1 = document.getElementById("txtBox1");
+            let num2 = document.getElementById("txtBox2");
+            let sum = parseInt(num1.value) + parseInt(num2.value);
+            alert(sum);
+        }
+        function getDif() {
+            let num1 = document.getElementById("txtBox1");
+            let num2 = document.getElementById("txtBox2");
+            let dif = parseInt(num1.value) - parseInt(num2.value);
+            alert(dif);
+        }
+        function getProd() {
+            let num1 = document.getElementById("txtBox1");
+            let num2 = document.getElementById("txtBox2");
+            let pro = parseInt(num1.value) * parseInt(num2.value);
+            alert(pro);
+        }
+        function getQuo() {
+            let num1 = document.getElementById("txtBox1");
+            let num2 = document.getElementById("txtBox2");
+            let quo = parseInt(num1.value) / parseInt(num2.value);
+            alert(quo);
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="txtBox1"/>
+    <br />
+    <input type="text" id="txtBox2"/>
+    <br />
+    <input type="button" value="Add" onclick="getSum()"/>
+    <br />
+    <input type="button" value="Subtract" onclick="getDif()"/>
+    <br />
+    <input type="button" value="Multiply" onclick="getProd()"/>
+    <br />
+    <input type="button" value="Divide" onclick="getQuo()"/>
+
+</body>
+</html>
